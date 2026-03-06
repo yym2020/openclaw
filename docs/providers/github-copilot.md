@@ -52,14 +52,14 @@ openclaw models auth login-github-copilot --yes
 ## Set a default model
 
 ```bash
-openclaw models set github-copilot/gpt-5.4
+openclaw models set github-copilot/gpt-4o
 ```
 
 ### Config snippet
 
 ```json5
 {
-  agents: { defaults: { model: { primary: "github-copilot/gpt-5.4" } } },
+  agents: { defaults: { model: { primary: "github-copilot/gpt-4o" } } },
 }
 ```
 
@@ -67,6 +67,6 @@ openclaw models set github-copilot/gpt-5.4
 
 - Requires an interactive TTY; run it directly in a terminal.
 - Copilot model availability depends on your plan; if a model is rejected, try
-  another ID (for example `github-copilot/gpt-5.4` or `github-copilot/gpt-4.1`).
+  another ID (for example `github-copilot/gpt-4.1`).
 - The login stores a GitHub token in the auth profile store and exchanges it for a
   Copilot API token when OpenClaw runs.
